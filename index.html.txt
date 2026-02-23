@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My VPC Hosted Website</title>
+  <style>
+    /* Reset */
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+
+    body {
+      background: #f4f7f8;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #0f4c75;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #bbe1fa;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffd700;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .hero {
+      background: #3282b8;
+      color: #fff;
+      padding: 60px 20px;
+      text-align: center;
+      border-radius: 10px;
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 40px;
+      justify-content: center;
+    }
+
+    .card {
+      background: #fff;
+      flex: 1 1 250px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #0f4c75;
+    }
+
+    .card p {
+      color: #555;
+    }
+
+    footer {
+      background: #0f4c75;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 50px;
+    }
+
+    @media(max-width: 768px){
+      .features { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to My VPC Website</h1>
+    <p>Modern UI/UX hosted on AWS EC2 Public IP</p>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#features">Features</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h2>Your Cloud Hosted Web Solution</h2>
+    <p>This website is hosted on a public AWS EC2 instance inside a VPC with Internet Gateway configured.</p>
+  </section>
+
+  <section class="features" id="features">
+    <div class="card">
+      <h3>Secure VPC</h3>
+      <p>All traffic is routed through a custom VPC ensuring security and isolation.</p>
+    </div>
+    <div class="card">
+      <h3>Public IP Access</h3>
+      <p>The website is accessible publicly using an assigned Elastic IP or Public IP.</p>
+    </div>
+    <div class="card">
+      <h3>Modern Design</h3>
+      <p>Clean UI/UX with responsive design ensures the site looks perfect on all devices.</p>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <p>&copy; 2026 My VPC Website | Built by Kiran Gadakari</p>
+  </footer>
+
+</body>
+</html>
